@@ -1,24 +1,13 @@
-This file is part of md2tex.
-
-	Md2tex is free software: you can redistribute it and/or modify it under the
-terms of the GNU General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option) any later
-version.
-
-	Md2tex is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License along
-with md2tex.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
-= NOM
+NOM
+===
 	
 	md2tex, convertisseur mardown vers latex
 
-= SYNOPSIS
+SYNOPSIS
+========
 
 	md2tex [options] source.md 
 	md2tex [options] source.mardown
@@ -26,7 +15,8 @@ with md2tex.  If not, see <http://www.gnu.org/licenses/>.
 	md2tex --configure-header header.tex
 	md2tex --configure-footer footer.tex
 
-= DESCRIPTION
+DESCRIPTION
+===========
 
 	Il s'agit d'un script permettant de générer du code latex à partir d'une
 	source formatée à l'aide du langage markdown. Il peut générer juste la
@@ -40,7 +30,8 @@ with md2tex.  If not, see <http://www.gnu.org/licenses/>.
 
 	Par défaut le code généré est affiché sur la sortie standard
 
-= OPTIONS
+OPTIONS
+=======
 	
 	-a, --author
 		active le mode COMPLET et définit l'auteur du code latex généré. Par
@@ -81,13 +72,15 @@ with md2tex.  If not, see <http://www.gnu.org/licenses/>.
 		active le mode COMPLET et définit le titre du code latex généré. Par
 		défaut, le titre est "Unknown title".
 
-= AUTEUR
+AUTEUR
+======
 
 	Le code de ce script python a été écrit par Thibault Friedrich.	En cas de problème, 
 	de questions, de propositions d'améliorations, vous pouvez me contacter à
 	<thibaultfriedrich@gmail.com>
 
-= BUGS
+BUGS
+====
 
 	Il n'existe pas de bugs connus cependant, certaines fonctionnalités du
 	langage markdown n'ont pas encore été gérées.
