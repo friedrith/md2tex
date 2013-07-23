@@ -32,8 +32,9 @@ md2tex
 ## OPTIONS
 	
 	-a, --author
-		active le mode COMPLET et définit l'auteur du code latex généré. Par
-		défaut, le nom de l'auteur est "Unknown author".
+        définit l'auteur du code latex généré. Cette option n'est utile que si
+        le mode COMPLET est activé. Par défaut, le nom de l'auteur est "Unknown
+        author".
 
 	-c, --complete
 		active le mode COMPLET qui génére le code complet d'un fichier latex
@@ -43,20 +44,33 @@ md2tex
 		~/.md4tex/footer.tex.
 	
 	--configure-footer [footer]
-		remplace le fichier de footer par défaut par le nouveau fichier donné en
-		paramètre. Le fichier de footer 
+        remplace le fichier de footer par défaut par le nouveau fichier donné
+        en paramètre. Les prochains appels à md2tex utiliseront le nouveau
+        fichier.
 
 	--configure-header [header]
-		remplace le fichier de header par défaut par le nouveau fichier donné en
-		paramètre. Afin de pouvoir ultérieurement changer certaines valeurs comme le
-		titre, l'auteur ou la date, les emplacements prévus à cet effet dans le nouveau
-		header configuré doivent respectivement comporter les chaines '@@@Title@@@',
-		'@@@Author@@@' et '@@@Date@@@'.
+        remplace le fichier de header par défaut par le nouveau fichier donné
+        en paramètre. Afin de pouvoir ultérieurement changer certaines valeurs
+        comme le titre, l'auteur ou la date, les emplacements prévus à cet
+        effet dans le nouveau header configuré doivent respectivement comporter
+        les chaines '@@@Title@@@', '@@@Author@@@' et '@@@Date@@@'. Les
+        prochains appels à md2tex utiliseront le nouveau fichier.
 
 	-d, --date
-		action le mode COMPLET et définit la date du code latex généré. Par
-		défault, la date est à \today.
+        définit la date du code latex généré. Cette option n'est utile que si
+        le mode COMPLET est activé. Par défault, la date est à \today.
 
+    --footer [footer]
+        définit le fichier source utilisé comme footer pour cet unique appel à
+        md2tex.
+
+    -h, --help
+        affiche le fichier d'aide (le fichier README.md)
+
+    --header [header]
+        définit le fichier source utilisé comme header pour cet unique appel à
+        md2tex.
+         
 	-o, --output [sortie]
 		définit le nom du fichier de sortie. 
 

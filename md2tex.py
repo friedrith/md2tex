@@ -26,7 +26,7 @@ def usage():
 
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "po:ct:a:d:hv",["pdf","output=","complete","title=","author=","date=","help","version","configure-header","configure-footer"])
+    opts, args = getopt.getopt(sys.argv[1:], "po:ct:a:d:hv",["pdf","output=","complete","title=","author=","date=","help","version","header=","footer=","configure-header","configure-footer"])
 except getopt.GetoptError as err:
     # Affiche l'aide et quitte le programme
     print(err) # Va afficher l'erreur en anglais
@@ -91,13 +91,10 @@ for o, a in opts:
        outputFilename = a; 
     elif o in ("-a","--author"):
        author = a;
-       complete = True;
     elif o in ("-t","--title"):
        title = a; 
-       complete = True;
     elif o in ("-d","--date"):
        date = a; 
-       complete = True;
     elif o in ("-c","--complete"):
         complete = True;
     elif o in ("-h","--help"):
@@ -121,6 +118,18 @@ for o, a in opts:
             sys.exit(0);
         else :
             sys.usage();
+    elif o in ("--header"):
+        if os.path.isfile(a):
+            headerFilename = a;
+        else:
+            print("L'argument doit être un chemin vers un fichier valide");
+            sys.exit(2);
+    elif o in ("--footer"):
+        if os.path.isfile(a):
+            footerFilename = a;
+        else:
+            print("L'argument doit être un chemin vers un fichier valide");
+            sys.exit(2);
     elif o in ("-v","--version"):
         print("md2tex version 1.0 sous licence GPL v3");
         sys.exit(0);
@@ -195,18 +204,22 @@ try:
             writeTexFile(outputFilename,source);
         else:
             try:
-                headerFile = open(headerFilename,'r');
-                headerContent = headerFile.read();
-                headerContent = re.sub(r'@@@Title@@@',title,headerContent);
-                headerContent = re.sub(r'@@@Author@@@',author,headerContent);
-                headerContent = re.sub(r'@@@Date@@@',date,headerContent);
-                footerFile = open(footerFilename,'r');
-                footerContent = footerFile.read();
-                headerFile.close();
-                footerFile.close();
-                print(headerContent);
-                print(source);
-                print(footerContent);
+                if complete :
+                    headerFile = open(headerFilename,'r');
+                    headerContent = headerFile.read();
+                    headerContent = re.sub(r'@@@Title@@@',title,headerContent);
+                    headerContent = re.sub(r'@@@Author@@@',author,headerContent);
+                    headerContent = re.sub(r'@@@Date@@@',date,headerContent);
+                    footerFile = open(footerFilename,'r');
+                    footerContent = footerFile.read();
+                    headerFile.close();
+                    footerFile.close();
+                    print(headerContent);
+                    print(source);
+                    print(footerContent);
+                else :
+                    print(source);
+
             except IOError as err:
                 print(err);
 
