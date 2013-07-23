@@ -1,13 +1,13 @@
+md2tex
+======
 
 
+## NOM
 
-NOM
-===
 	
 	md2tex, convertisseur mardown vers latex
 
-SYNOPSIS
-========
+## SYNOPSIS
 
 	md2tex [options] source.md 
 	md2tex [options] source.mardown
@@ -15,8 +15,7 @@ SYNOPSIS
 	md2tex --configure-header header.tex
 	md2tex --configure-footer footer.tex
 
-DESCRIPTION
-===========
+## DESCRIPTION
 
 	Il s'agit d'un script permettant de générer du code latex à partir d'une
 	source formatée à l'aide du langage markdown. Il peut générer juste la
@@ -30,8 +29,7 @@ DESCRIPTION
 
 	Par défaut le code généré est affiché sur la sortie standard
 
-OPTIONS
-=======
+## OPTIONS
 	
 	-a, --author
 		active le mode COMPLET et définit l'auteur du code latex généré. Par
@@ -72,15 +70,13 @@ OPTIONS
 		active le mode COMPLET et définit le titre du code latex généré. Par
 		défaut, le titre est "Unknown title".
 
-AUTEUR
-======
+## AUTEUR
 
 	Le code de ce script python a été écrit par Thibault Friedrich.	En cas de problème, 
 	de questions, de propositions d'améliorations, vous pouvez me contacter à
 	<thibaultfriedrich@gmail.com>
 
-BUGS
-====
+## BUGS
 
 	Il n'existe pas de bugs connus cependant, certaines fonctionnalités du
 	langage markdown n'ont pas encore été gérées.
