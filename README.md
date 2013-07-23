@@ -27,7 +27,7 @@ md2tex
 	sous markdown. Il est à noté que l'extension du fichier source ne modifie en
 	rien au comportement du convertisseur.
 
-	Par défaut le code généré est affiché sur la sortie standard
+	Par défaut le code généré est affiché sur la sortie standard.
 
 ## OPTIONS
 	
@@ -48,7 +48,7 @@ md2tex
 
 	--configure-header [header]
 		remplace le fichier de header par défaut par le nouveau fichier donné en
-		paramètre. Afin de pouvoir ultérieurement changé certaines valeurs comme le
+		paramètre. Afin de pouvoir ultérieurement changer certaines valeurs comme le
 		titre, l'auteur ou la date, les emplacements prévus à cet effet dans le nouveau
 		header configuré doivent respectivement comporter les chaines '@@@Title@@@',
 		'@@@Author@@@' et '@@@Date@@@'.
