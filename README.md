@@ -81,8 +81,8 @@ md2tex
 		basename du fichier donné en entrée.
 
 	-t, --title
-		active le mode COMPLET et définit le titre du code latex généré. Par
-		défaut, le titre est "Unknown title".
+        définit le titre du code latex généré. Cette option n'est utile que si
+        le mode COMPLET est activé. Par défaut, le titre est "Unknown title".
 
 ## UTILISATION
 
