@@ -72,8 +72,10 @@ md2tex
 
 ## UTILISATION
 
-    Pour utiliser ce script, il faut impérativement lancer le script d'installation 'install.sh'.
-    Une fois cela fait, il est possible de créer un alias dans son fichier de configuration de shell vers le fichier ~/.md2tex/md2tex.py
+    Pour utiliser ce script, il faut impérativement lancer le script
+    d'installation 'install.sh'.  Une fois cela fait, il est possible de créer
+    un alias dans son fichier de configuration de shell vers le fichier
+    ~/.md2tex/md2tex.py
 
 ## AUTEUR
 
