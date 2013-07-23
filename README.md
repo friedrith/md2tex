@@ -19,7 +19,7 @@ md2tex
 
     Il s'agit d'un script permettant de générer du code latex à partir d'une
     source formatée à l'aide du langage markdown. Il peut générer juste la
-    partie décrite par le ficheir markdown mais en mode COMPLET, il peut aussi
+    partie décrite par le fichier markdown mais en mode COMPLET, il peut aussi
     générer l'ensemble d'un fichier latex compilable. Enfin, il peut aussi
     générer le pdf correspondant au latex.
 
