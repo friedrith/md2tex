@@ -1,0 +1,83 @@
+\documentclass[10pt]{article}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage[toc,page]{appendix}
+\usepackage{wrapfig}
+\usepackage{color}
+\usepackage{fancybox}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{darkgreen}{rgb}{0,0.56,0}
+
+
+     %%%%%%%%%%
+% TAILLE DES PAGES (A4 serré)
+
+     \setlength{\parindent}{0pt}
+     \setlength{\parskip}{1ex}
+     \setlength{\textwidth}{17cm}
+     \setlength{\textheight}{24cm}
+     \setlength{\oddsidemargin}{-.7cm}
+     \setlength{\evensidemargin}{-.7cm}
+     \setlength{\topmargin}{-.5in}
+
+     %%%%%%%%%%
+     % EN-TÊTES ET PIED DE PAGES
+
+     \pagestyle{fancyplain}
+     \renewcommand{\headrulewidth}{0pt}
+     \addtolength{\headheight}{1.6pt}
+     \addtolength{\headheight}{2.6pt}
+     \lfoot{}
+     \cfoot{}
+     \rfoot{\footnotesize\sf page~\thepage/\pageref{LastPage}}
+
+
+
+     \newcommand{\imp}[1]{\textbf{#1}}
+     \newcommand{\comment}[1]{\textsl{#1}}
+     \newcommand{\make}[1]{\textbf{Commande Makefile : #1}}
+     \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+     \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+     \newcommand{\IR}{\mathbb{R}}
+     \newcommand{\IN}{\mathbb{N}}
+     \newcommand{\Co}[1]{\mathcal{C}^{#1}}
+      
+
+
+
+     \newtheorem{theo}{Théorème}
+
+     %\lhead{\footnotesize\sf CR TPL1}
+     %\rhead{\footnotesize\sf Démo des enseignants} % numéro d'équipe Teide 
+
+     %%%%%%%%%%
+     % TITRE DU DOCUMENT
+
+     \title{@@@Title@@@}
+
+     \author{@@@Author@@@} 
+     %% penser à indiquer: numéro d'équipe Teide + noms + groupe TD
+
+     \date{@@@Date@@@}
+
+
+     %%%%%%%
+
+     \begin{document}
+     \def\appendixpage{\newpage \begin{center}  \Huge\textbf{Annexe}  \end{center}  }
+     \def\appendixname{Annexe}% 
+     \maketitle
+
+
+

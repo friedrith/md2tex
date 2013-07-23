@@ -17,11 +17,11 @@ md2tex
 
 ## DESCRIPTION
 
-	Il s'agit d'un script permettant de générer du code latex à partir d'une
-	source formatée à l'aide du langage markdown. Il peut générer juste la
-	partie décrite par le ficheir markdown mais en mode COMPLET, il peut aussi
-	générer l'ensemble d'un fichier latex compilable. Enfin, il peut aussi
-	générer le pdf correspondant au latex.
+    Il s'agit d'un script permettant de générer du code latex à partir d'une
+    source formatée à l'aide du langage markdown. Il peut générer juste la
+    partie décrite par le ficheir markdown mais en mode COMPLET, il peut aussi
+    générer l'ensemble d'un fichier latex compilable. Enfin, il peut aussi
+    générer le pdf correspondant au latex.
 
 	Le fichier donné en entré doit être un fichier dont le contenu est formatté
 	sous markdown. Il est à noté que l'extension du fichier source ne modifie en
