@@ -70,6 +70,11 @@ md2tex
 		active le mode COMPLET et définit le titre du code latex généré. Par
 		défaut, le titre est "Unknown title".
 
+## UTILISATION
+
+    Pour utiliser ce script, il faut impérativement lancer le script d'installation 'install.sh'.
+    Une fois cela fait, il est possible de créer un alias dans son fichier de configuration de shell vers le fichier ~/.md2tex/md2tex.py
+
 ## AUTEUR
 
 	Le code de ce script python a été écrit par Thibault Friedrich.	En cas de problème, 
