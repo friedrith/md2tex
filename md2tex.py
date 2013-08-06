@@ -154,6 +154,9 @@ try:
     source = fileSource.read()
     fileSource.close();
 
+
+    source = re.sub(r'!\((.*) "(.*)"\)',r'\\begin{figure}\n\t\\includegraphics{\1}\n\t\\caption{\2}\n\\end{figure}',source);
+
     # itemize
     source = re.sub(r'\n\n(?=\* .*)',r'\n\n\\begin{itemize}\n',source);
     source = re.sub(r'\n\* (.*)\n\n',r'\item \1\n\\end{itemize}\n\n',source);
