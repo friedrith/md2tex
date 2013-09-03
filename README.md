@@ -87,15 +87,15 @@ md2tex
 ## UTILISATION
 
     Pour utiliser ce script, il faut impérativement lancer le script
-    d'installation 'install.sh'.  Une fois cela fait, il est possible de créer
+    d'installation 'install.sh'. Une fois cela fait, il est possible de créer
     un alias dans son fichier de configuration de shell vers le fichier
     ~/.md2tex/md2tex.py
 
 ## AUTEUR
 
-	Le code de ce script python a été écrit par Thibault Friedrich.	En cas de problème, 
-	de questions, de propositions d'améliorations, vous pouvez me contacter à
-	<thibaultfriedrich@gmail.com>
+    Le code de ce script python a été écrit par Thibault Friedrich.	En cas de
+    problème, de questions, de propositions d'améliorations, vous pouvez me
+    contacter à <thibault.friedrich@gmail.com>
 
 ## BUGS
 
