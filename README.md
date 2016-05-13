@@ -24,8 +24,8 @@ md2tex code by Thibault Friedrich. English translation by Rick Henderson.
     générer le pdf correspondant au latex.
 
 	The given input file must be a file whose content is formatted
-in markdown. It should be noted that the extension of the source file does not 
-change the behavior of the converter.
+	in markdown. It should be noted that the extension of the source file does not 
+	change the behavior of the converter.
 
 	By default the generated code is displayed on the standard output.
 
