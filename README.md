@@ -1,11 +1,11 @@
 md2tex
 ======
+md2tex code by Thibault Friedrich. English translation by Rick Henderson.
 
-
-## NOM
+## NAME
 
 	
-	md2tex, convertisseur mardown vers latex
+	md2tex, convert Markdown into LaTex.
 
 ## SYNOPSIS
 
@@ -23,11 +23,11 @@ md2tex
     générer l'ensemble d'un fichier latex compilable. Enfin, il peut aussi
     générer le pdf correspondant au latex.
 
-	Le fichier donné en entré doit être un fichier dont le contenu est formatté
-	sous markdown. Il est à noté que l'extension du fichier source ne modifie en
-	rien au comportement du convertisseur.
+	The given input file must be a file whose content is formatted
+in markdown. It should be noted that the extension of the source file does not 
+change the behavior of the converter.
 
-	Par défaut le code généré est affiché sur la sortie standard.
+	By default the generated code is displayed on the standard output.
 
 ## OPTIONS
 	
@@ -99,7 +99,6 @@ md2tex
 
 ## BUGS
 
-	Il n'existe pas de bugs connus cependant, certaines fonctionnalités du
-	langage markdown n'ont pas encore été gérées.
+	There are no known bugs, though certain features of markdown have not been implemented.
 
 
