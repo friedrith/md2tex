@@ -65,14 +65,13 @@ md2tex code by Thibault Friedrich. English translation by Rick Henderson.
         md2tex.
 
     -h, --help
-        affiche le fichier d'aide (le fichier README.md)
+        displays the help file (the README.md file)
 
     --header [header]
-        définit le fichier source utilisé comme header pour cet unique appel à
-        md2tex.
+        defines the source file used as the header for the current output file 
          
-	-o, --output [sortie]
-		définit le nom du fichier de sortie. 
+	-o, --output [destintation]
+		defines the name of the destination file
 
 	-p, --pdf
 		active le mode COMPLET et génère le fichier pdf. Attention, si le
@@ -93,9 +92,14 @@ md2tex code by Thibault Friedrich. English translation by Rick Henderson.
 
 ## AUTEUR
 
-    Le code de ce script python a été écrit par Thibault Friedrich.	En cas de
+    Le code de ce script python a été écrit par Thibault Friedrich. En cas de
     problème, de questions, de propositions d'améliorations, vous pouvez me
     contacter à <thibault.friedrich@gmail.com>
+    
+    This is a python script written by Thibault Friedrich. In case of problems, questions 
+    or suggestions for improvement, you can contact him at <thibaut.friedrich@gmail.com>
+    
+    English translations added by Rick Henderson.
 
 ## BUGS
 
