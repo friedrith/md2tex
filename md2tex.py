@@ -1,4 +1,5 @@
 #!/usr/bin/python3.2
+# -*- coding: iso-8859-15 -*-
 # This file is part of md2tex.
 # 
 # 	Md2tex is free software: you can redistribute it and/or modify it under the
@@ -22,7 +23,7 @@ import re
 import subprocess
 
 def usage():
-    print("launch md4tex -h for the help");
+    print("launch md2tex -h for the help");
 
 
 try:
@@ -30,7 +31,7 @@ try:
 except getopt.GetoptError as err:
     # Affiche l'aide et quitte le programme
     print(err) # Va afficher l'erreur en anglais
-    usage() # Fonction à écrire rappelant la syntaxe de la commande
+    usage() # Fonction a ecrire rappelant la syntaxe de la commande. Function to display the command syntax.
     sys.exit(2)
 
 
@@ -229,4 +230,3 @@ try:
 
 except IOError as err:
     print(err);
- 
