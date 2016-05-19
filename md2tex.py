@@ -1,4 +1,4 @@
-#!/usr/bin/python3.2
+#!/usr/bin/env python
 # -*- coding: iso-8859-15 -*-
 # This file is part of md2tex.
 # 
@@ -80,8 +80,6 @@ def writeTexFile(texFilename,source):
 if len(args) > 0:
     inputFilename = args[0]
     outputFilenameBase = re.sub(r'(.*).(txt|md|markdown)',r'\1',inputFilename);
-
-#inputFilename = sys.argv[1];
 
 for o, a in opts:
     if o in ("-p", "--pdf"):
