@@ -149,10 +149,9 @@ if len(args) == 0:
 try:
     fileSource=open(inputFilename,'r')
 
-    # Conversion en string 
+    # Read the entire source file into a string called source.
     source = fileSource.read()
     fileSource.close();
-
 
     source = re.sub(r'!\((.*) "(.*)"\)',r'\\begin{figure}\n\t\\includegraphics{\1}\n\t\\caption{\2}\n\\end{figure}',source);
 
