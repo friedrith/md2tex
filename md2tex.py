@@ -121,16 +121,16 @@ for o, a in opts:
         if os.path.isfile(a):
             headerFilename = a;
         else:
-            print("L'argument doit être un chemin vers un fichier valide");
+            print("The argument must be a path to a valid file. L'argument doit être un chemin vers un fichier valide");
             sys.exit(2);
     elif o in ("--footer"):
         if os.path.isfile(a):
             footerFilename = a;
         else:
-            print("L'argument doit être un chemin vers un fichier valide");
+            print("The argument must be a path to a valid file. L'argument doit être un chemin vers un fichier valide.");
             sys.exit(2);
     elif o in ("-v","--version"):
-        print("md2tex version 1.0 sous licence GPL v3");
+        print("md2tex version 1.0 under licence GPL v3");
         sys.exit(0);
     else :
         usage();
@@ -168,7 +168,7 @@ try:
     source = re.sub(r'\n\t[0-9]+\. (.*)',r'\n\t\subitem \1',source);
 
 
-    # retour à la ligne
+    # retour à la ligne / Return a newline
     source = re.sub(r'  \n',r'\n\\newline\n',source,re.MULTILINE);
 
 
