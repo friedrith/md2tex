@@ -1,11 +1,11 @@
 md2tex
 ======
-md2tex code by Thibault Friedrich. English translation by Rick Henderson.
 
-## NAME
+
+## NOM
 
 	
-	md2tex, convert Markdown into LaTex.
+	md2tex, convertisseur mardown vers latex
 
 ## SYNOPSIS
 
@@ -23,11 +23,11 @@ md2tex code by Thibault Friedrich. English translation by Rick Henderson.
     générer l'ensemble d'un fichier latex compilable. Enfin, il peut aussi
     générer le pdf correspondant au latex.
 
-	The given input file must be a file whose content is formatted
-	in markdown. It should be noted that the extension of the source file does not 
-	change the behavior of the converter.
+	Le fichier donné en entré doit être un fichier dont le contenu est formatté
+	sous markdown. Il est à noté que l'extension du fichier source ne modifie en
+	rien au comportement du convertisseur.
 
-	By default the generated code is displayed on the standard output.
+	Par défaut le code généré est affiché sur la sortie standard.
 
 ## OPTIONS
 	
@@ -65,13 +65,14 @@ md2tex code by Thibault Friedrich. English translation by Rick Henderson.
         md2tex.
 
     -h, --help
-        displays the help file (the README.md file)
+        affiche le fichier d'aide (le fichier README.md)
 
     --header [header]
-        defines the source file used as the header for the current output file 
+        définit le fichier source utilisé comme header pour cet unique appel à
+        md2tex.
          
-	-o, --output [destintation]
-		defines the name of the destination file
+	-o, --output [sortie]
+		définit le nom du fichier de sortie. 
 
 	-p, --pdf
 		active le mode COMPLET et génère le fichier pdf. Attention, si le
@@ -92,17 +93,13 @@ md2tex code by Thibault Friedrich. English translation by Rick Henderson.
 
 ## AUTEUR
 
-    Le code de ce script python a été écrit par Thibault Friedrich. En cas de
+    Le code de ce script python a été écrit par Thibault Friedrich.	En cas de
     problème, de questions, de propositions d'améliorations, vous pouvez me
     contacter à <thibault.friedrich@gmail.com>
-    
-    This is a python script written by Thibault Friedrich. In case of problems, questions 
-    or suggestions for improvement, you can contact him at <thibaut.friedrich@gmail.com>
-    
-    English translations added by Rick Henderson.
 
 ## BUGS
 
-	There are no known bugs, though certain features of markdown have not been implemented.
+	Il n'existe pas de bugs connus cependant, certaines fonctionnalités du
+	langage markdown n'ont pas encore été gérées.
 
 

@@ -1,4 +1,5 @@
-#!/usr/bin/python3.2
+#!/usr/bin/env python
+# -*- coding: iso-8859-15 -*-
 # This file is part of md2tex.
 # 
 # 	Md2tex is free software: you can redistribute it and/or modify it under the
@@ -22,7 +23,7 @@ import re
 import subprocess
 
 def usage():
-    print("launch md4tex -h for the help");
+    print("launch md2tex -h for the help");
 
 
 try:
@@ -30,7 +31,7 @@ try:
 except getopt.GetoptError as err:
     # Affiche l'aide et quitte le programme
     print(err) # Va afficher l'erreur en anglais
-    usage() # Fonction à écrire rappelant la syntaxe de la commande
+    usage() # Fonction a ecrire rappelant la syntaxe de la commande. Function to display the command syntax.
     sys.exit(2)
 
 
@@ -80,8 +81,6 @@ if len(args) > 0:
     inputFilename = args[0]
     outputFilenameBase = re.sub(r'(.*).(txt|md|markdown)',r'\1',inputFilename);
 
-#inputFilename = sys.argv[1];
-
 for o, a in opts:
     if o in ("-p", "--pdf"):
        pdf = True;
@@ -122,16 +121,16 @@ for o, a in opts:
         if os.path.isfile(a):
             headerFilename = a;
         else:
-            print("L'argument doit être un chemin vers un fichier valide");
+            print("The argument must be a path to a valid file. L'argument doit être un chemin vers un fichier valide");
             sys.exit(2);
     elif o in ("--footer"):
         if os.path.isfile(a):
             footerFilename = a;
         else:
-            print("L'argument doit être un chemin vers un fichier valide");
+            print("The argument must be a path to a valid file. L'argument doit être un chemin vers un fichier valide.");
             sys.exit(2);
     elif o in ("-v","--version"):
-        print("md2tex version 1.0 sous licence GPL v3");
+        print("md2tex version 1.0 under licence GPL v3");
         sys.exit(0);
     else :
         usage();
@@ -150,10 +149,9 @@ if len(args) == 0:
 try:
     fileSource=open(inputFilename,'r')
 
-    # Conversion en string 
+    # Read the entire source file into a string called source.
     source = fileSource.read()
     fileSource.close();
-
 
     source = re.sub(r'!\((.*) "(.*)"\)',r'\\begin{figure}\n\t\\includegraphics{\1}\n\t\\caption{\2}\n\\end{figure}',source);
 
@@ -170,7 +168,7 @@ try:
     source = re.sub(r'\n\t[0-9]+\. (.*)',r'\n\t\subitem \1',source);
 
 
-    # retour à la ligne
+    # retour à la ligne / Return a newline
     source = re.sub(r'  \n',r'\n\\newline\n',source,re.MULTILINE);
 
 
@@ -229,4 +227,3 @@ try:
 
 except IOError as err:
     print(err);
- 
